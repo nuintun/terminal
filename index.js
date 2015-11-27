@@ -78,9 +78,9 @@ function Terminal(options){
   options.ontitle = typeof options.ontitle === 'function' ? options.ontitle : function (){};
   this.ontitle = options.ontitle;
 
-  // set convert eol
-  options.convertEol = options.convertEol === true;
-  this.convertEol = options.convertEol;
+  // set convert end of line
+  options.convertEOL = options.convertEOL === true;
+  this.convertEOL = options.convertEOL;
 
   // set options
   this.options = options;
