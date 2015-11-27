@@ -70,13 +70,13 @@ function Terminal(options){
   this.cols = options.cols;
   this.rows = options.rows;
 
-  // set handler
-  options.handler = typeof options.handler === 'function' ? options.handler : function (){};
-  this.handler = options.handler;
+  // set on data callback
+  options.ondata = typeof options.ondata === 'function' ? options.ondata : function (){};
+  this.ondata = options.ondata;
 
-  // set handle title
-  options.handleTitle = typeof options.handleTitle === 'function' ? options.handleTitle : function (){};
-  this.handleTitle = options.handleTitle;
+  // set on title callback
+  options.ontitle = typeof options.ontitle === 'function' ? options.ontitle : function (){};
+  this.ontitle = options.ontitle;
 
   // set convert eol
   options.convertEol = options.convertEol === true;
