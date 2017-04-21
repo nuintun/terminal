@@ -1,2 +1,2 @@
 # terminal
-A terminal emulator in browser
+> A terminal emulator in browser
